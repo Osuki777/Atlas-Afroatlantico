@@ -18,5 +18,8 @@ jobs:
           test -f LICENSE
           test -f aviso-archivo.html
           grep -q "Oscar Salvador Fernandez" VERSION
-          grep -q "v1.0.0" VERSION
           grep -q "github.com/Osuki777/Atlas-Afroatlantico" VERSION
+          grep -Eq 'v[0-9]+\.[0-9]+\.[0-9]+' VERSION
+          SHA=$(awk '/^aviso-sha256:/{print $2}' VERSION)
+          test -n "$SHA"
+          grep -q "$SHA" aviso.sha256
