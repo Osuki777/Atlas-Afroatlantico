@@ -11,15 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verificar huella SHA-256
-        run: sha256sum -c aviso.sha256
+        run: sha256sum -c Atlas-Afroatlantico.sha256
       - name: Comprobar ficha de edición
         run: |
           test -f VERSION
           test -f LICENSE
-          test -f aviso-archivo.html
+          test -f Atlas-Afroatlantico.html
           grep -q "Oscar Salvador Fernandez" VERSION
           grep -q "github.com/Osuki777/Atlas-Afroatlantico" VERSION
           grep -Eq 'v[0-9]+\.[0-9]+\.[0-9]+' VERSION
-          SHA=$(awk '/^aviso-sha256:/{print $2}' VERSION)
+          SHA=$(awk '/^bytes-sha256:/{print $2}' VERSION)
           test -n "$SHA"
-          grep -q "$SHA" aviso.sha256
+          grep -q "$SHA" Atlas-Afroatlantico.sha256
