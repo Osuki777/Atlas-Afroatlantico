@@ -1,0 +1,22 @@
+name: Integridad
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  huella:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar huella SHA-256
+        run: sha256sum -c aviso.sha256
+      - name: Comprobar ficha de edición
+        run: |
+          test -f VERSION
+          test -f LICENSE
+          test -f aviso-archivo.html
+          grep -q "Oscar Salvador Fernandez" VERSION
+          grep -q "v1.0.0" VERSION
+          grep -q "github.com/Osuki777/Atlas-Afroatlantico" VERSION
