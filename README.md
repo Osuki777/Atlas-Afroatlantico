@@ -31,6 +31,8 @@ En el HTML: botón **Verificar huella**. Si el sello falla, la copia fue editada
 sha256sum -c aviso.sha256
 ```
 
+En cada push, GitHub Actions corre esa comprobación (workflow **Integridad**) y publica el ejemplar (workflow **Pages**).
+
 ## Derechos
 
 © 2026 Oscar Salvador Fernandez, Buenos Aires, Argentina. Todos los derechos reservados.
