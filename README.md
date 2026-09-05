@@ -2,42 +2,40 @@
 
 Guía histórica y educativa.
 
-**Oscar Salvador Fernandez** · Buenos Aires, Argentina · **v2.1.0** · edición 2026.09.05-5 · 5 de septiembre de 2026
+**Oscar Salvador Fernandez** · Buenos Aires, Argentina · **v2.2.0** · edición 2026.09.05-6 · 5 de septiembre de 2026
 
 Un solo archivo: [`Atlas-Afroatlantico.html`](./Atlas-Afroatlantico.html). Abrilo en el navegador. Offline. Sin ZIP.
 
+Es la guía: mismas pantallas, misma barra, mismas fichas y dossiers. CSS, placas y tipos van dentro.
+
 - Texto canónico: https://github.com/Osuki777/Atlas-Afroatlantico
-- Release v2.1.0: https://github.com/Osuki777/Atlas-Afroatlantico/releases/tag/v2.1.0
+- Release v2.2.0: https://github.com/Osuki777/Atlas-Afroatlantico/releases/tag/v2.2.0
 - Web: https://osuki777.github.io/Atlas-Afroatlantico/
 - Guía: https://osuki777.github.io/Atlas-Afroatlantico/Atlas-Afroatlantico.html
 
-Este repositorio es el depósito fechado de autoría, legalidad e integridad. El archivo `Atlas-Afroatlantico.html` es la obra: CSS, placas y scripts van dentro. Las placas se guardan una sola vez, a resolución de lectura.
-
 ## Cita
 
-> Fernandez, Oscar Salvador. *Atlas Afroatlántico: Guía histórica y educativa.* Edición 2026.09.05-5 (v2.1.0). Buenos Aires, 5 de septiembre de 2026.
+> Fernandez, Oscar Salvador. *Atlas Afroatlántico: Guía histórica y educativa.* Edición 2026.09.05-6 (v2.2.0). Buenos Aires, 5 de septiembre de 2026.
 
 ## Integridad
 
 SHA-256 de los bytes de `Atlas-Afroatlantico.html`:
 
 ```
-ceb50d42fcfd71adc5a2dc2489fc8608a634f46c8f230aaec600c32181360891  Atlas-Afroatlantico.html
+9f7bd1cc143ea234f812b050fc726f3ec8f1cc3059588561f4f56b6444c9f5ef  Atlas-Afroatlantico.html
 ```
 
 SHA-256 canónico (meta `atlas-checksum`, campo a ceros):
 
 ```
-9a7ebe93fe2fc222553338c627d4100281557bc79ff492bdd3819a505e1846b5
+95fd309a04f1ab5ad61cd842da9a704b7d18d948ec7eb310d1ffe3af1f3659ae
 ```
 
-En el HTML: botón **Verificar huella**. Si el sello falla, la copia fue editada. El ejemplar de este repositorio, tag **v2.1.0**, es el texto de referencia.
+En el HTML: botón **Verificar huella**. Si el sello falla, la copia fue editada. El ejemplar de este repositorio, tag **v2.2.0**, es el texto de referencia.
 
 ```bash
 sha256sum -c Atlas-Afroatlantico.sha256
 ```
-
-En cada push, GitHub Actions corre esa comprobación (workflow **Integridad**) y publica el ejemplar (workflow **Pages**).
 
 ## Derechos
 
