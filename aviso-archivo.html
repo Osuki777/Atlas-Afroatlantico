@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atlas Afroatlántico — Oscar Salvador Fernandez</title>
+    <meta
+      name="description"
+      content="Créditos y colofón de Atlas Afroatlántico. Autor: Oscar Salvador Fernandez. Buenos Aires, Argentina. Edición 2026.09.05-1 (v1.0.0)."
+    />
+    <meta name="author" content="Oscar Salvador Fernandez" />
+    <meta
+      name="copyright"
+      content="© 2026 Oscar Salvador Fernandez, Buenos Aires, Argentina. Todos los derechos reservados. Queda prohibida la modificación de esta obra."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+    />
+    <style>
+      :root {
+        --bg: #0c0c0b;
+        --fg: #f2f0ea;
+        --muted: #9a968c;
+        --subtle: #6f6c64;
+        --surface: #161614;
+        --surface-2: #1f1e1a;
+        --line: rgb(242 240 234 / 0.12);
+        --sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+        --display: "Newsreader", "Iowan Old Style", Georgia, serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: var(--bg);
+        color: var(--fg);
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        margin: 0;
+        font-family: var(--sans);
+        line-height: 1.6;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 4.5rem;
+      }
+      p.kicker {
+        margin: 0;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      h1 {
+        margin: 0.5rem 0 0;
+        font-family: var(--display);
+        font-size: 2.25rem;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+        text-wrap: balance;
+      }
+      .lead {
+        margin: 1.25rem 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+      .copyline {
+        margin: 1.25rem 0 0;
+        font-family: var(--display);
+        font-size: 1.2rem;
+        color: var(--fg);
+      }
+      dl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1.25rem;
+        margin: 2.5rem 0 0;
+        padding: 1.25rem 1.35rem;
+        background: var(--surface);
+        border-radius: 12px;
+        box-shadow: 0 0 0 1px var(--line);
+      }
+      dt {
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--subtle);
+      }
+      dd {
+        margin: 0.25rem 0 0;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+      dd.fg {
+        color: var(--fg);
+        font-family: var(--display);
+        font-size: 1.15rem;
+      }
+      a {
+        color: inherit;
+      }
+      .cite {
+        margin: 1rem 0 0;
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--surface);
+        box-shadow: 0 0 0 1px var(--line);
+      }
+      .cite .label {
+        margin: 0;
+        padding: 0.75rem 1.35rem;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: var(--surface-2);
+      }
+      .cite pre {
+        margin: 0;
+        padding: 1rem 1.35rem 1.25rem;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        color: var(--fg);
+      }
+      section {
+        margin-top: 2.25rem;
+      }
+      h2 {
+        margin: 0;
+        font-family: var(--display);
+        font-size: 1.45rem;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+      section p {
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+        text-wrap: pretty;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+      .scroll {
+        overflow-x: auto;
+        border-radius: 12px;
+        background: var(--surface);
+        box-shadow: 0 0 0 1px var(--line);
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 0.75rem 1.15rem;
+        vertical-align: top;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--subtle);
+      }
+      td.k {
+        color: var(--fg);
+        font-weight: 500;
+      }
+      p.foot {
+        margin: 0;
+        padding: 0.75rem 1.15rem 1rem;
+        font-size: 0.75rem;
+        color: var(--subtle);
+      }
+      aside {
+        margin-top: 1.25rem;
+        padding: 1.25rem 1.35rem;
+        background: var(--surface-2);
+        border-radius: 12px;
+        box-shadow: 0 0 0 1px var(--line);
+      }
+      aside .label {
+        margin: 0;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      aside p + p {
+        margin-top: 0.75rem;
+        color: var(--fg);
+        font-size: 0.95rem;
+      }
+      button {
+        margin-top: 0.85rem;
+        font: inherit;
+        font-size: 0.85rem;
+        color: var(--fg);
+        background: transparent;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+      }
+      .end {
+        margin-top: 2.75rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      #verify-out {
+        margin-top: 0.6rem;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        word-break: break-all;
+      }
+      @media (max-width: 640px) {
+        dl {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 1.85rem;
+        }
+      }
+      @media print {
+        html,
+        body {
+          background: #fff;
+          color: #111;
+        }
+        .lead,
+        dd,
+        section p,
+        p.kicker,
+        dt,
+        aside .label,
+        .cite .label,
+        th,
+        p.foot,
+        .end {
+          color: #333;
+        }
+        dd.fg,
+        h1,
+        h2,
+        aside p + p,
+        .copyline,
+        .cite pre,
+        td.k {
+          color: #111;
+        }
+        dl,
+        aside,
+        .cite,
+        .scroll {
+          background: #f4f1ea;
+          box-shadow: none;
+          border: 1px solid #d9d4c8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Créditos y colofón · edición 2026.09.05-1 · v1.0.0</p>
+      <h1>Atlas Afroatlántico — Oscar Salvador Fernandez</h1>
+      <p class="lead">
+        Atlas Afroatlántico es una guía histórica y educativa de Oscar Salvador Fernandez. Buenos
+        Aires, Argentina. 5 de septiembre de 2026. Español. Quien accede, copia, cita, enlaza o
+        redistribuye esta edición queda notificado de esa autoría, de la reserva de derechos y de la
+        prohibición de modificarla.
+      </p>
+      <p class="copyline">
+        © 2026 Oscar Salvador Fernandez, Buenos Aires, Argentina. Todos los derechos reservados.
+      </p>
+
+      <dl>
+        <div>
+          <dt>Autor</dt>
+          <dd class="fg">Oscar Salvador Fernandez</dd>
+        </div>
+        <div>
+          <dt>Lugar</dt>
+          <dd>Buenos Aires, Argentina</dd>
+        </div>
+        <div>
+          <dt>Obra</dt>
+          <dd class="fg">Atlas Afroatlántico — Guía histórica y educativa</dd>
+        </div>
+        <div>
+          <dt>Edición</dt>
+          <dd>2026.09.05-1 · v1.0.0 · 5 de septiembre de 2026</dd>
+        </div>
+        <div>
+          <dt>Idioma</dt>
+          <dd>Español</dd>
+        </div>
+        <div>
+          <dt>Formato</dt>
+          <dd>Publicación digital. Guía en línea y ejemplar de archivo aviso-archivo.html. Texto canónico en GitHub.</dd>
+        </div>
+        <div>
+          <dt>Texto canónico</dt>
+          <dd><a href="https://github.com/Osuki777/Atlas-Afroatlantico/releases/tag/v1.0.0">github.com/Osuki777/Atlas-Afroatlantico · tag v1.0.0</a></dd>
+        </div>
+        <div>
+          <dt>Reserva</dt>
+          <dd>Todos los derechos reservados.</dd>
+        </div>
+      </dl>
+
+      <section id="citar">
+        <h2>Cómo citar</h2>
+        <div class="cite">
+          <p class="label">Cita</p>
+          <pre>Fernandez, Oscar Salvador. Atlas Afroatlántico: Guía histórica y educativa. Edición 2026.09.05-1 (v1.0.0). Buenos Aires, 5 de septiembre de 2026.</pre>
+        </div>
+      </section>
+
+      <section id="derechos">
+        <h2>Derechos</h2>
+        <p>
+          © 2026 Oscar Salvador Fernandez, Buenos Aires, Argentina. Todos los derechos reservados
+          sobre el texto, la arquitectura de la guía, las tablas, los dossiers, la selección y
+          disposición de fuentes y de imágenes, el diseño editorial y las placas didácticas de Atlas
+          Afroatlántico.
+        </p>
+        <p>
+          La autoría de las partes originales corresponde a Oscar Salvador Fernandez, Buenos Aires,
+          Argentina. El derecho de paternidad es irrenunciable. Nadie puede suprimir, sustituir u
+          ocultar esa autoría, ni atribuir la obra a un tercero, a una casa de santo, a un terreiro,
+          a un hounfò, a una iglesia, a una institución académica o a una autoridad religiosa que no
+          la haya suscrito.
+        </p>
+        <p>
+          La publicación en línea no implica cesión, licencia abierta ni abandono de derechos. No se
+          otorga licencia Creative Commons ni autorización tácita de reproducción sustancial,
+          transformación, traducción o explotación comercial. La modificación de una copia no
+          transfiere la autoría ni la titularidad.
+        </p>
+        <p>
+          Queda autorizada, sin petición previa, la lectura de esta edición canónica; la cita breve,
+          con mención del autor Oscar Salvador Fernandez, del título Atlas Afroatlántico, de su
+          carácter de guía histórica y del enlace a esta edición, siempre que la cita no distorsione
+          el sentido —en particular, la distinción entre deidad africana, santo católico,
+          correspondencia sincrética y función ritual—; y el enlace a la edición canónica, sin
+          enmarcar ni reproducirla de modo que simule ser otro sitio.
+        </p>
+        <p>
+          Requieren autorización expresa y previa del titular: la reproducción integral o
+          sustancial, la explotación comercial, la traducción, la adaptación, la edición impresa o
+          audiovisual, la incorporación a materiales didácticos, cursos o productos de terceros, el
+          entrenamiento o la alimentación de sistemas automatizados con el texto o las placas de
+          esta edición, y cualquier otra transformación.
+        </p>
+      </section>
+
+      <section id="regimen">
+        <h2>Régimen legal</h2>
+        <p>
+          Atlas Afroatlántico está protegida por la Ley 11.723 de la República Argentina y por el
+          Convenio de Berna para la Protección de las Obras Literarias y Artísticas desde su
+          creación, sin trámite constitutivo. El acceso desde cualquier país no reduce esa
+          protección. El derecho cubre el texto, las tablas, los dossiers, las placas didácticas y
+          la estructura; no las ideas históricas sueltas ni las fotografías y obras de arte de
+          terceros identificadas como «documento». Modificar una copia no transfiere la autoría.
+          Esto no es asesoramiento jurídico.
+        </p>
+        <p>
+          En Argentina la protección es automática. El derecho nace con la creación y la publicación
+          de la obra. La falta de inscripción en la Dirección Nacional del Derecho de Autor (DNDA)
+          no implica ausencia de derechos: el registro y el depósito documentan; no constituyen el
+          derecho.
+        </p>
+        <p>
+          Art. 5 de la Ley 11.723: la propiedad intelectual corresponde al autor durante su vida y a
+          sus herederos o derechohabientes durante setenta años, contados desde el 1 de enero del
+          año siguiente al de su muerte.
+        </p>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Qué declara esta obra</th>
+                <th>Qué implica para quien la lee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="k">© 2026 Oscar Salvador Fernandez, Buenos Aires</td>
+                <td>Autor identificado. Reserva de derechos.</td>
+              </tr>
+              <tr>
+                <td class="k">Cita recomendada (arriba)</td>
+                <td>Atribución si se cita un pasaje.</td>
+              </tr>
+              <tr>
+                <td class="k">Ejemplar de referencia en GitHub</td>
+                <td>github.com/Osuki777/Atlas-Afroatlantico es el texto canónico fechado.</td>
+              </tr>
+              <tr>
+                <td class="k">Huella SHA-256 de aviso-archivo.html</td>
+                <td>El botón Verificar comprueba si el ejemplar de archivo de este aviso fue editado.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="foot">
+            Una copia alterada cuya huella se recalculó no se detecta dentro del propio archivo. El
+            contraste es el ejemplar público del repositorio.
+          </p>
+        </div>
+      </section>
+
+      <section id="integridad">
+        <h2>Integridad de esta copia</h2>
+        <p>
+          El autor se opone a cualquier deformación, mutilación u otra modificación de la obra, y a
+          cualquier acto que atente contra su sentido histórico o su decoro.
+        </p>
+        <p>
+          Sin autorización expresa y previa del titular queda prohibido: modificar, interpolar o
+          reescribir los textos; resumirlos de modo que altere el sentido; reordenarlos para invertir
+          las advertencias; alterar las tablas de correspondencias o presentarlas como catecismo,
+          diccionario universal o identidad teológica entre deidad y santo; sustituir, recortar o
+          recontextualizar las imágenes para hacer decir a la obra lo que no dice; eliminar este
+          aviso, los créditos o las leyendas «placa didáctica» y «documento»; publicar una versión
+          alterada bajo el mismo título, o como si fuera esta edición.
+        </p>
+        <p>
+          Toda copia modificada deja de ser Atlas Afroatlántico. No representa a Oscar Salvador
+          Fernandez ni a esta edición. Presentarla como la obra original constituye una infracción a
+          la integridad y a la paternidad.
+        </p>
+        <p>
+          La edición de referencia es esta publicación digital, fechada el 5 de septiembre de 2026,
+          identificada como 2026.09.05-1 (v1.0.0), que incluye el presente aviso. Este archivo es el ejemplar
+          de archivo. La huella SHA-256 se publica junto a él en aviso.sha256. El botón Verificar
+          huella recalcula el hash de este archivo y lo compara con esa cifra. Si el sello falla,
+          esta copia no es el texto de este aviso. Si el sello pasa, coincide con el hash; no prueba
+          por sí sola que nadie recalculó la huella tras un cambio.
+        </p>
+        <p>
+          Texto canónico: github.com/Osuki777/Atlas-Afroatlantico — tag v1.0.0 (aviso-archivo.html +
+          aviso.sha256). Web: osuki777.github.io/Atlas-Afroatlantico/aviso-archivo.html. No hay DRM.
+          Un candado de archivo no suma derecho de autor y no es el mecanismo de integridad de esta
+          obra. Carecen de autorización los ejemplares que omitan este texto, lo alteren, extraigan
+          las tablas sin las advertencias de no equivalencia, o presenten el Atlas como obra de otro
+          autor, de una religión o de una institución que no lo haya suscrito.
+        </p>
+        <aside>
+          <p class="label">Cláusula de integridad</p>
+          <p>
+            Una copia que altere el texto, las tablas, las imágenes o este aviso no es Atlas
+            Afroatlántico. No puede atribuirse a Oscar Salvador Fernandez ni presentarse como esta
+            edición. Este archivo es el ejemplar de archivo del aviso. La huella SHA-256 se publica
+            junto a él en aviso.sha256. La autoría no se transfiere por el hecho de modificar una
+            copia. No hay DRM.
+          </p>
+          <button type="button" id="verify">Verificar huella</button>
+          <p id="verify-out"></p>
+        </aside>
+      </section>
+
+      <section id="limites">
+        <h2>Qué es y qué no es</h2>
+        <p>
+          Es una guía histórica y educativa sobre tradiciones religiosas de África occidental y
+          centro-occidental y sobre su reorganización en las Américas católicas. Presta particular
+          atención a las correspondencias —que no son equivalencias— entre deidades africanas y el
+          santoral.
+        </p>
+        <p>
+          No es un manual de iniciación. No consagra, no prescribe sacrificio, no sustituye a un
+          babalawo, a una ialorixá, a un houngan, a un palero ni a un sacerdote católico. No habla
+          en nombre de religiones vivas ni de la Iglesia. No es un dictamen legal.
+        </p>
+        <p>
+          Las correspondencias documentadas son asociaciones históricas locales, variables según
+          casa, ciudad y época. No son equivalencias teológicas.
+        </p>
+        <p>
+          Las fotografías y obras de arte identificadas como «documento» pertenecen a sus autores,
+          museos, archivos, iglesias o licencias de origen. Entre las fuentes acreditadas en los
+          pies de esta edición figuran The Metropolitan Museum of Art, el Saint Louis Art Museum, la
+          Library of Congress, la Smithsonian Institution, Wikimedia Commons y los santuarios,
+          iglesias y fiestas públicas nombrados en cada imagen. Esta edición no reclama la
+          titularidad de esas piezas. Quien las reutilice fuera de aquí debe atender a la licencia
+          de origen, no a este aviso.
+        </p>
+        <p>
+          Las placas didácticas no son altares consagrados ni retratos de deidades. Son
+          ilustraciones originales de esta edición, destinadas a mostrar atributos materiales. No
+          sustituyen un objeto ritual.
+        </p>
+      </section>
+
+      <section id="colofon">
+        <h2>Colofón</h2>
+        <p>
+          Compuesto para lectura en pantalla. Tipos: Newsreader (display) y Figtree (cuerpo). Este
+          archivo, aviso-archivo.html, se abre sin la guía: es el texto de autoría, legalidad e
+          integridad, no el Atlas entero.
+        </p>
+        <p>Autor: Oscar Salvador Fernandez · Buenos Aires, Argentina · github.com/Osuki777 · github.com/Osuki777/Atlas-Afroatlantico.</p>
+      </section>
+
+      <p class="end">© 2026 Oscar Salvador Fernandez · Atlas Afroatlántico</p>
+    </main>
+    <script>
+      async function sha256Hex(buffer) {
+        const hash = await crypto.subtle.digest("SHA-256", buffer);
+        return [...new Uint8Array(hash)].map((b) => b.toString(16).padStart(2, "0")).join("");
+      }
+      document.getElementById("verify").addEventListener("click", async function () {
+        var out = document.getElementById("verify-out");
+        out.textContent = "Calculando…";
+        try {
+          var fileRes = await fetch("aviso-archivo.html", { cache: "no-store" });
+          var listedRes = await fetch("aviso.sha256", { cache: "no-store" });
+          if (!fileRes.ok || !listedRes.ok) throw new Error("fetch");
+          var got = await sha256Hex(await fileRes.arrayBuffer());
+          var expected = (await listedRes.text()).trim().split(/\s+/)[0];
+          if (got === expected) {
+            out.textContent = "Coincide con la huella publicada.\n" + got;
+          } else {
+            out.textContent = "El sello falla. Esta copia no es el texto de archivo de esta edición.\n" + got;
+          }
+        } catch (e) {
+          out.textContent =
+            "No se pudo leer aviso-archivo.html y aviso.sha256 desde esta copia. Abrí el aviso en la publicación canónica para verificar.";
+        }
+      });
+    </script>
+  </body>
+</html>
