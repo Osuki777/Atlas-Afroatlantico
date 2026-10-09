@@ -1,5 +1,15 @@
 # Atlas Afroatlántico
 
+![Un atlas abierto sobre el Atlántico, con rutas en oro](docs/portada.jpg)
+
+**El mapa que la escuela no te dio.** Rutas, fichas y dossiers del Atlántico negro. Un archivo. Sin internet.
+
+| | |
+|---|---|
+| Para quién | Quien quiere estudiar esa historia con una guía que se puede citar |
+| Qué incluye | La guía en el navegador, la edición impresa y el sello de integridad |
+| Qué no hace | No resume el tema en una lámina. Es la obra, no un adelanto |
+
 Guía histórica y educativa.
 
 **Oscar Salvador Fernandez** · Buenos Aires, Argentina · **v2.2.0** · edición 2026.09.05-6 · 5 de septiembre de 2026
