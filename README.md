@@ -53,3 +53,7 @@ sha256sum -c Atlas-Afroatlantico.sha256
 Ley 11.723 y Convenio de Berna. El derecho nace con la obra. Queda autorizada la cita breve con atribución. Queda prohibido republicar la obra como propia.
 
 Las fotografías y obras de arte marcadas «documento» siguen siendo de sus titulares.
+
+## Criterios de mantenimiento y publicación
+
+Ver [CRITERIOS.md](CRITERIOS.md), [SECURITY.md](SECURITY.md) y [REVISION_PUBLICACION.md](REVISION_PUBLICACION.md). Autoría y permisos específicos de la obra se conservan según LICENSE y sus avisos. Publicar no convierte el proyecto en código abierto ni acredita auditoría o certificación.
