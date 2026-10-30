@@ -1,6 +1,6 @@
 # Atlas Afroatlántico
 
-![Ficha de Ògún](docs/images/atlas_ogun.png)
+![Ficha de Ògún](https://i.imgur.com/93gd1Y9.png)
 
 **El mapa que la escuela no te dio.** Rutas, fichas y dossiers del Atlántico negro. Un archivo. Sin internet.
 
